@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+:root {
+    --preto: #272727;
+    --amarelo:#e4c931;
+    --branco: #FAFFD8;
+}
 * {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -21,18 +26,18 @@ main{
     overflow: scroll;
 }
 th, td {
-    border: 1px solid #0c0c0c;
+    border: 1px solid var(--preto);
     padding: 8px;
     text-align: center;
 }
 
 th {
-    background-color: #f2f2f2;
-    color: #333;
+    background-color: var(--branco);
+    color: var(--preto);
 }
 
 caption {
-    background-color: #a0a0a0;
+    background-color: var(--amarelo);
     font-weight: bold;
     padding: 15px;
     width: 100vw;
@@ -42,14 +47,14 @@ caption {
 tbody tr td:first-child{
     position: sticky;
     left: 0;
-    background-color: #dfdfdf;
+    background-color: var(--branco);
 }
 thead tr th{
     position: sticky;
     top: 0;
-    background-color: #adadad;
+    background-color: var(--branco);
     z-index: 1;
-    border: 1px solid black;
+    border: 1px solid var(--preto);
 }
 thead tr th:first-child{
     left: 0;
@@ -60,7 +65,7 @@ nav{
     width: 100vw;
     left: 0;
     top: 0;
-    background-color: red;
+    background-color: var(--preto);
     z-index: 3;
     border-bottom: 1px solid;
 
@@ -76,10 +81,10 @@ nav ul a{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #32A65A;
+    background-color: var(--amarelo);
     flex-grow: 1;
     text-align: center;
-    color: #000000;
+    color: var(--preto);
     font-size: 1.5em;
     text-decoration: none;
     transition: filter 500ms, font-size 250ms;
@@ -97,10 +102,45 @@ a.active{
 }
 tbody tr:nth-child(even){
     filter: brightness(0.9);
-    background-color: #ceffd1; 
+    background-color: var(--branco); 
 }
 @media (max-width: 768px) {
     table, th, td {
         font-size: 12px;
     }
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    text-align: center;
+}
+
+.resumo1{
+    background-color: var(--branco);
+    color: var(--preto);
+}
+
+.resumo2{
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+.resumo1, .resumo2{
+    padding: 30px 25px 50px 25px;
+}
+.resumo{
+    text-align: justify;
 }
