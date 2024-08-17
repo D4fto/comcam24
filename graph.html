@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dados Populacionais e Sociais</title>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 <link rel="stylesheet" href="./Concam.css">
 <body>
@@ -15,7 +16,30 @@
         </ul>
     </nav>
     <main>
-        Gráficos
-    </main>
+        <div id="myChart" style="max-width:100%; height:1500px"></div>
+        <script>
+        google.charts.load('current',{packages:['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+        
+        function drawChart() {
+
+        // Set Data
+        const data = google.visualization.arrayToDataTable([
+        ['cidade', 'População total em 2000', 'População total em 2010', 'População total em 2022'],
+        ['Altamira do Paraná',6999,4306,1772],    ['Araruna',13081,13419,14485],    ['Barbosa Ferraz',14110,12656,10795],    ['Boa Esperança',5162,4568,4558],    ['Campina da Lagoa',17018,15394,15723],    ['Campo Mourão',80476,87194,99432],    ['Corumbataí do Sul',4946,4002,3760],    ['Engenheiro Beltrão',14082,13906,12454],    ['Farol',3963,3472,3039],    ['Fênix',4942,4802,4492],    ['Goioerê',29750,29018,28437],    ['Iretama',11335,10622,10684],    ['Janiópolis',8084,6516,5938],    ['Juranda',8288,7331,6618],    ['Luiziana',7696,7060,6940],    ['Mamborê',13455,13652,13842],    ['Moreira Sales',11871,11679,11008],    ['Nova Cantu',9301,7655,7190],    ['Peabiru',13382,12982,12612],    ['Quarto Centenário',5333,4856,4201],    ['Quinta do Sol',6573,5641,5182],    ['Rancho Alegre do Oeste',3034,2658,2404],    ['Roncador',13632,11537,11251],    ['Terra Boa',16856,16179,15623],    ['Ubiratã',20885,21392,21693],  
+        ]);
+
+        // Set Options
+        const options = {
+        title: 'População total'
+        };
+
+        // Draw
+        const chart = new google.visualization.BarChart(document.getElementById('myChart'));
+        chart.draw(data, options);
+
+        }
+        </script>
+</main>
 </body>
 </html>

@@ -751,6 +751,13 @@
             </tbody>
         </table>
     </main>
-
+    <script>
+        const trs=document.querySelector('table').querySelector('tbody').querySelectorAll('tr')
+        let str = ""
+        for(let i = 0; i<trs.length;i++){
+            str+="['"+trs[i].querySelectorAll('td')[0].innerHTML+"',"+trs[i].querySelectorAll('td')[3].innerHTML+","+trs[i].querySelectorAll('td')[6].innerHTML+","+trs[i].querySelectorAll('td')[9].innerHTML+"],    "
+        }
+        console.log(str)
+    </script>
 </body>
 </html>
