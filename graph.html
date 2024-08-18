@@ -16,7 +16,7 @@
         </ul>
     </nav>
     <main>
-        <div id="myChart" style="max-width:100%; height:1500px"></div>
+        <div id="myChart" style="max-width:100%; height:1500px; background-color: aqua;"></div>
         <script>
         const dados = [
             {
@@ -1436,7 +1436,10 @@
 
         // Set Options
         const options = {
-        title: 'População total'
+        title: 'População total',
+        legend: { position: 'top', textStyle:{
+            fontSize: 16
+        }},
         };
 
         // Draw
