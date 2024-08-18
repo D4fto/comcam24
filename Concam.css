@@ -11,20 +11,20 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+footer{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--amarelo);
+}
 table {
     width: 100vw;
     border-collapse: separate;
     margin-bottom: 20px;
     border-spacing: 0;
 }
-main{
-    position: fixed;
-    height: calc(100vh - 50px);
-    width: 100vw;
-    top: 50px;
-    overflow: scroll;
-}
+
 th, td {
     border: 1px solid var(--preto);
     padding: 8px;
@@ -114,15 +114,6 @@ h1{
     text-align: center;
 }
 
-p{
-    text-align: center;
-    margin-left: 3rem;
-    margin-right: 3rem;
-    font-size: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 h2{
     text-align: center;
