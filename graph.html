@@ -1426,7 +1426,7 @@
             google.charts.setOnLoadCallback(drawChart);
         });
         function drawChart() {
-        datas = [['cidade', 'População total em 2000', 'População total em 2010', 'População total em 2022']]
+        datas = [['cidade', '2000', '2010', '2022']]
         for(let i = 0; i<dados.length; i++){
             datas.push([dados[i].nome,dados[i].dados.populacao2000.total,dados[i].dados.populacao2010.total,dados[i].dados.populacao2022.total])
         }
