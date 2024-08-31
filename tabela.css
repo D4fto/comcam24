@@ -1,0 +1,8 @@
+main{
+    position: fixed;
+    height: calc(100vh - 50px);
+    width: 100vw;
+    top: 50px;
+    overflow-x: scroll !important;
+    overflow-y: scroll !important;
+}
