@@ -9,12 +9,12 @@
     type="image/png">
     <script src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
-<link rel="stylesheet" href="./Concam.css">
+<link rel="stylesheet" href="./comcam.css">
 <body>
     <nav>
         <ul>
-            <a href="./resumo.html" ><li>Resumo</li></a>
-            <a href="./Concam.html"><li>Tabela</li></a>
+            <a href="./" ><li>Resumo</li></a>
+            <a href="./comcam.html"><li>Tabela</li></a>
             <a href="./graph.html" class="active"><li>Gráficos</li></a>
         </ul>
     </nav>
@@ -1478,23 +1478,27 @@
                     }
                 }
             ]
-            google.charts.load('current',{packages:['corechart']});
-            google.charts.setOnLoadCallback(drawChart);
-            google.charts.setOnLoadCallback(drawChart2);
-            google.charts.setOnLoadCallback(drawChart3);
-            google.charts.setOnLoadCallback(drawChart4);
-            google.charts.setOnLoadCallback(drawChart5);
-            google.charts.setOnLoadCallback(drawChart6);
-            window.addEventListener('resize', function () {
+            function drawAll(){
                 google.charts.setOnLoadCallback(drawChart);
                 google.charts.setOnLoadCallback(drawChart2);
                 google.charts.setOnLoadCallback(drawChart3);
                 google.charts.setOnLoadCallback(drawChart4);
                 google.charts.setOnLoadCallback(drawChart5);
                 google.charts.setOnLoadCallback(drawChart6);
+            }
+            google.charts.load('current',{packages:['corechart'], 'language' : 'pt'});
+            drawAll()
+            window.addEventListener('resize', function () {
+                if(window.innerWidth<=768){
+                    document.querySelector('#myChart5').style.height='500px'
+                }
+                else{
+                    document.querySelector('#myChart5').style.height='1000px'
+                }
+                drawAll()
             });
             function drawChart() {
-            datas = [['cidade', '2000', '2010', '2022']]
+            datas = [['cidade', '2000','2010', '2022']]
             for(let i = 0; i<dados.length; i++){
                 datas.push([dados[i].nome,dados[i].dados.populacao2000.total,dados[i].dados.populacao2010.total,dados[i].dados.populacao2022.total])
             }
@@ -1513,7 +1517,7 @@
             chartArea: {bottom:75,top:150},
             bar:{groupWidth:'75%'},
             hAxis:{
-                
+                format: 'decimal',
                 gridlines:{
                     color: 'black'
                 }
@@ -1522,7 +1526,8 @@
                 textStyle: {
                     fontSize: 12,
                 }
-            }
+            },
+            colors:['#5888e9','#DC3912','#FF9900'] 
             };
 
             // Draw
@@ -1649,10 +1654,60 @@
         
     }
             function drawChart5() {
-                datas = [['cidade', 'Arborização', {role: 'tooltip'}]]
-                    for(let i = 0; i<dados.length; i++){
-                        datas.push([dados[i].nome,dados[i].dados.arborizacao.valor/100,String(dados[i].dados.arborizacao.valor).replace('.',',')+"%"])
+                daidos={
+                    _0_40:[0,''],
+                    _40_60:[0,''],
+                    _60_70:[0,''],
+                    _70_80:[0,''],
+                    _80_90:[0,''],
+                    _90_95:[0,''],
+                    _95_100:[0,'']
+                }
+                for(let i = 0; i<dados.length; i++){
+                    num = dados[i].dados.arborizacao.valor
+                    switch (true) {
+                        case (num <= 40):
+                            daidos._0_40[0]+=1
+                            daidos._0_40[1]+=daidos._0_40[1]==''?'\n'+dados[i].nome:', \n'+dados[i].nome
+                            break;
+                        case (num >= 40 && num < 60):
+                            daidos._40_60[0]+=1
+                            daidos._40_60[1]+=daidos._40_60[1]==''?'\n'+dados[i].nome:', \n'+dados[i].nome
+                            break;
+                        case (num >= 60 && num < 70):
+                            daidos._60_70[0]+=1
+                            daidos._60_70[1]+=daidos._60_70[1]==''?'\n'+dados[i].nome:', \n'+dados[i].nome
+                            break;
+                        case (num >= 70 && num < 80):
+                            daidos._70_80[0]+=1
+                            daidos._70_80[1]+=daidos._70_80[1]==''?'\n'+dados[i].nome:', \n'+dados[i].nome
+                            break;
+                        case (num >= 80 && num < 90):
+                            daidos._80_90[0]+=1
+                            daidos._80_90[1]+=daidos._80_90[1]==''?'\n'+dados[i].nome:', \n'+dados[i].nome
+                            break;
+                        case (num >= 90 && num < 95):
+                            daidos._90_95[0]+=1
+                            daidos._90_95[1]+=daidos._90_95[1]==''?'\n'+dados[i].nome:', \n'+dados[i].nome
+                            break;
+                        case (num >= 95 && num <= 100):
+                            daidos._95_100[0]+=1
+                            daidos._95_100[1]+=daidos._95_100[1]==''?'\n'+dados[i].nome:', \n'+dados[i].nome
+                            break;
                     }
+                }
+                console.log(daidos)
+
+                datas = [
+                    ['Arborização', 'cidades', {role: 'tooltip'}],
+                    ['0%~40%', daidos._0_40[0], daidos._0_40[1]+'.'],
+                    ['40%~60%', daidos._40_60[0], daidos._40_60[1]+'.'],
+                    ['60%~70%', daidos._60_70[0], daidos._60_70[1]+'.'],
+                    ['70%~80%', daidos._70_80[0], daidos._70_80[1]+'.'],
+                    ['80%~90%', daidos._80_90[0], daidos._80_90[1]+'.'],
+                    ['90%~95%', daidos._90_95[0], daidos._90_95[1]+'.'],
+                    ['95%~100%', daidos._95_100[0], daidos._95_100[1]+'.'],
+                ]
                     
                     // Set Data
                     const data = google.visualization.arrayToDataTable(datas);
@@ -1672,7 +1727,7 @@
                         gridlines:{
                             color: 'black'
                         },
-                        minValue: 0.4
+                        minValue: 0
                     },
                     vAxis:{
                         textStyle: {
@@ -1683,7 +1738,7 @@
                 };
                 
                 // Draw
-                const chart = new google.visualization.BarChart(document.getElementById('myChart5'));
+                const chart = new google.visualization.ColumnChart(document.getElementById('myChart5'));
                 chart.draw(data, options);
 
             }
@@ -1728,12 +1783,29 @@
         </script>
     </main>
     <footer>
-        <p>Fontes: </p>
-        <ul>
-            <li><a href="https://sidra.ibge.gov.br/pesquisa/censo-demografico/demografico-2022/universo-populacao-por-idade-e-sexo">Censo 2022</a></li>
-            <li><a href="https://sidra.ibge.gov.br/pesquisa/censo-demografico/demografico-2010/universo-caracteristicas-da-populacao-e-dos-domicilios">Censo 200 e 2010</a></li>
-            <li><a href="https://cidades.ibge.gov.br/">cidades</a></li>
-        </ul>
+        <div>
+
+            <h1>Fontes: </h1>
+            <ul>
+                <li><a href="https://sidra.ibge.gov.br/pesquisa/censo-demografico/demografico-2022/universo-populacao-por-idade-e-sexo">IBGE - Censo 2022</a></li>
+                <li><a href="https://sidra.ibge.gov.br/pesquisa/censo-demografico/demografico-2010/universo-caracteristicas-da-populacao-e-dos-domicilios">IBGE - Censo 2000 e 2010</a></li>
+                <li><a href="https://cidades.ibge.gov.br/">IBGE - cidades</a></li>
+            </ul>
+        </div>
+        <div>
+            <img src="./logo.png" alt="">
+        </div>
+        <div>
+            <h1>Créditos: </h1>
+            <ul>
+                <li><a href="https://sidra.ibge.gov.br/pesquisa/censo-demografico/demografico-2022/universo-populacao-por-idade-e-sexo">Marcelo Ast de souza</a></li>
+                <li><a href="https://sidra.ibge.gov.br/pesquisa/censo-demografico/demografico-2010/universo-caracteristicas-da-populacao-e-dos-domicilios">Pedro Henrique Tunes Degasperi</a></li>
+                <li><a href="https://cidades.ibge.gov.br/">Ryan</a></li>
+                <li><a href="https://cidades.ibge.gov.br/">Mateus Augusto</a></li>
+                <li><a href="https://cidades.ibge.gov.br/">Andrei Abner </a></li>
+                <li><a href="https://cidades.ibge.gov.br/">Allan</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
