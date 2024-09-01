@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root {
-    --preto: #272727;
+    /* --preto: #272727;
     --amarelo:#e4c931;
-    --branco: #FAFFD8;
-    /* --preto: #1ABC9C;
+    --branco: #FAFFD8; */
+    --preto: #1ABC9C;
     --amarelo:#2C3E50;
-    --branco: #3498DB; */
+    --branco: #3498DB;
 }
 * {
     font-family: 'Roboto', sans-serif;
@@ -34,8 +34,12 @@ tfoot{
     filter: brightness(0.9);
 }
 tfoot tr{
-    background-color: var(--branco);
+    background-color: var(--amarelo);
     height: 60px;
+    
+}
+tfoot td{
+    border: 1px solid black;
 }
 tfoot td:first-child{
     border-right: 0px;
@@ -50,7 +54,7 @@ tfoot td:last-child{
 }
 th, td {
     border: 1px solid var(--preto);
-    /* border: 1px solid #BDC3C7; */
+    border: 1px solid #BDC3C7;
     padding: 8px;
     text-align: center;
 }
@@ -65,9 +69,9 @@ caption {
     font-weight: bold;
     padding: 15px;
     width: 100vw;
-    /* font-family: 'roboto', sans-serif;
+    font-family: 'roboto', sans-serif;
     font-weight: 500;
-    color:#ECF0F1; */
+    color:#ECF0F1;
     position: sticky;
     left: 0;
 }
@@ -75,20 +79,20 @@ tbody tr td:first-child{
     position: sticky;
     left: 0;
     background-color: var(--branco);
-    /* color: #ECF0F1;
+    color: #ECF0F1;
     background-color: #34495E;
-    border: 1px solid black; */
+    border: 1px solid black;
 }
 thead tr th{
     position: sticky;
     top: 0;
     background-color: var(--branco);
-    /* color: #ECF0F1;
-    background-color: #34495E; */
+    color: #ECF0F1;
+    background-color: #34495E;
     z-index: 1;
     border: 1px solid var(--preto);
-    /* border: 1px solid #BDC3C7;
-    border: 1px solid black; */
+    border: 1px solid #BDC3C7;
+    border: 1px solid black;
 }
 thead tr th:first-child{
     left: 0;
@@ -111,9 +115,8 @@ nav ul{
     align-items: center;
 }
 nav ul a{
-    /* font-family: 'roboto', sans-serif;
+    font-family: 'roboto', sans-serif;
     font-weight: 500;
-    color:#ECF0F1; */
     height: 100%;
     display: flex;
     align-items: center;
@@ -122,6 +125,7 @@ nav ul a{
     flex-grow: 1;
     text-align: center;
     color: var(--preto);
+    color:#ECF0F1;
     font-size: 1.5em;
     text-decoration: none;
     transition: filter 500ms, font-size 250ms;
@@ -144,7 +148,7 @@ a.active{
 tbody tr:nth-child(even){
     filter: brightness(0.9);
     background-color: var(--branco); 
-    /* background-color:#ECF0F1;  */
+    background-color:#ECF0F1; 
 }
 @media (max-width: 768px) {
     table, th, td {
@@ -160,17 +164,17 @@ tbody tr:nth-child(even){
 
 h1{
     text-align: center;
-    /* font-family: 'roboto', sans-serif;
+    font-family: 'roboto', sans-serif;
     font-weight: 500;
-    color: #34495E; */
+    color: #34495E;
 }
 
 
 h2{
     text-align: center;
-    /* font-family: 'roboto', sans-serif;
+    font-family: 'roboto', sans-serif;
     font-weight: 500;
-    color: #34495E; */
+    color: #34495E;
 }
 
 .resumo1{
@@ -183,8 +187,8 @@ h2{
 .resumo2{
     background-color: var(--preto);
     color: var(--branco);
-    /* background-color: #34495E;
-    color: #ECF0F1; */
+    background-color: #34495E;
+    color: #ECF0F1;
 
 }
 
@@ -200,9 +204,9 @@ footer img{
 footer a{
     font-family: 'roboto', sans-serif;
     font-weight: 500;
-    color:#443f09;
+    color:#ffffff;
 }
 footer h1{
     font-size: 1em;
-    color: #000000;
+    color: #ffffff;
 }
