@@ -4,27 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dados Populacionais e Sociais</title>
-    <link rel="icon"
-    href="https://upload.wikimedia.org/wikipedia/commons/e/eb/Logo_UTFPR.jpeg"
-    type="image/png">
-    <script src="./tri.js"></script>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/e/eb/Logo_UTFPR.jpeg" type="image/png">
+    <link rel="stylesheet" href="./comcam.css">
     <style>
-        main{
-            overflow-x: hidden !important;
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            margin-top: 50px;
         }
-        main p{
-            text-align: center;
-            margin-left: 3rem;
-            margin-right: 3rem;
-            font-size: 25px;
+        nav ul {
+            list-style: none;
             display: flex;
-            align-items: center;
             justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            overflow-x: hidden;
+            padding: 20px;
+        }
+        main p {
+            text-align: justify;
+            margin: 20px auto;
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 800px;
+        }
+        .resumo1, .resumo2 {
+            margin-bottom: 40px;
+        }
+        .resumo1 h1, .resumo2 h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 28px;
+            color: #2c2c54;
+        }
+        .resumo2 h2 {
+            font-size: 24px;
+            color: #40407a;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #2c2c54;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        footer div {
+            margin: 20px 0;
+        }
+        footer h1 {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        footer ul li {
+            margin: 5px 0;
+        }
+        footer ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        footer img {
+            max-width: 100px;
+            margin: 10px 0;
+        }
+
+        img{
+            max-width: 500px;
+            max-height: 250px;
         }
     </style>
 </head>
-<link rel="stylesheet" href="./comcam.css">
-<body class="body">
+<body>
+
     <nav>
         <ul>
             <a href="./" class="active"><li>Resumo</li></a>
@@ -32,26 +100,67 @@
             <a href="./graph.html"><li>Gráficos</li></a>
         </ul>
     </nav>
+
     <main>
-        <div class="resumo1"><h1 class="resumo1">Análise da População e Dados Sociais dos Municípios da Região Comcam, Paraná</h1>
-            <p class="resumo">A Região Comcam, no estado do Paraná, apresenta uma diversidade significativa em termos de indicadores sociais e econômicos, refletida nas suas estatísticas demográficas, educacionais e de saúde. Este artigo fornece uma análise detalhada dos dados disponíveis para diversos municípios da região, destacando aspectos importantes como crescimento populacional, nível de escolaridade, e condições de vida.</p></div>
-       <div class="resumo2"> <h2 class="resumo2">Crescimento Populacional e Composição</h2>
-        <p class="resumo">Nos últimos anos, a região Comcam experimentou variações consideráveis em seu crescimento populacional. Cidades como Araruna e Campo Mourão mostraram um aumento substancial na população entre os censos de 2000 e 2022. Em Araruna, a população cresceu de 13.081 em 2000 para 14.485 em 2022, enquanto Campo Mourão viu um crescimento de 80.476 para 99.432 no mesmo período. Em contraste, cidades menores como Corumbataí do Sul e Boa Esperança mostraram um crescimento mais modesto, refletindo suas dinâmicas locais e limitações de recursos.</p></div>
-       <div class="resumo1"> <h2 class="resumo1">Dados Econômicos</h2>
-        <p class="resumo">Os salários médios mensais variam consideravelmente entre os municípios. Boa Esperança destaca-se com um salário médio de 2,5 salários mínimos, enquanto Fênix apresenta um salário médio de 1,6 salários mínimos. Esses dados sugerem diferenças significativas no poder aquisitivo e nas condições econômicas locais.
-        O PIB per capita também revela disparidades notáveis. Municípios como Farol e Boa Esperança apresentam PIB per capita de R$72.035,16 e R$71.587,36, respectivamente, contrastando com valores menores em cidades como Corumbataí do Sul e Barbosa Ferraz. Essas diferenças refletem as variações na atividade econômica e na riqueza gerada em cada localidade.</p></div>
-        <div class="resumo2"><h2 class="resumo2">Educação e Escolaridade</h2>
-            <p class="resumo">A taxa de escolaridade é uma importante medida de desenvolvimento, e a região Comcam exibe um panorama variado. Araruna se destaca com uma taxa de escolaridade de 99,1%, ocupando a primeira posição na região/estado, enquanto Boa Esperança apresenta uma taxa de 99,00%, evidenciando um alto nível de educação. Em termos de Índice de Desenvolvimento da Educação Básica (IDEB), cidades como Juranda e Janiópolis mostram desempenhos elevados, com IDEB de 6,3 e 7,3, respectivamente, refletindo um forte compromisso com a educação básica.
-            </p></div>
-        <div class="resumo1"><h2 class="resumo1">Saúde e Qualidade de Vida</h2>
-            <p class="resumo">Os índices de mortalidade infantil, um indicador crucial da qualidade de vida, variam bastante. Iretama e Farol apresentam taxas de mortalidade infantil de 24,39 e 35,71 óbitos por mil nascidos vivos, respectivamente. Estes números indicam diferenças significativas nas condições de saúde e nos serviços médicos disponíveis nas diferentes localidades.Além disso, o esgotamento sanitário e a arborização são indicadores importantes das condições de vida urbana. Nova Cantu e Campo Mourão destacam-se com altos níveis de esgotamento sanitário e arborização, refletindo um ambiente urbano mais sustentável e saudável. No entanto, várias cidades ainda não têm dados completos disponíveis sobre esses indicadores, o que limita a análise abrangente de suas condições ambientais.</p></div>
-        <div class="resumo2"><h2 class="resumo2">Conclusão</h2>
-            <p class="resumo">A análise dos dados dos municípios da Região Comcam revela uma rica tapeçaria de variações sociais e econômicas. Enquanto algumas cidades mostram avanços significativos em termos de crescimento populacional, educação e condições econômicas, outras enfrentam desafios em áreas como saúde e infraestrutura. Estes dados fornecem uma visão valiosa para políticas públicas e planejamento regional, ajudando a direcionar esforços para promover o desenvolvimento equilibrado e sustentável em toda a região.A contínua coleta e análise de dados é essencial para entender as necessidades e oportunidades específicas de cada município, assegurando que as políticas e investimentos sejam direcionados de maneira eficaz para melhorar a qualidade de vida de todos os habitantes da região Comcam.</p></div>
+        <div class="resumo1">
+            <h1>Análise dos Municípios da Região Comcam, Paraná</h1>
+   
+            <div class="image-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzhWNW-ALqnu6L28TPb7LNBQnputt9b5e7eQ&s" alt="Imagem representativa da Região Comcam">
+            </div>
+            <p>A Região Comcam, no estado do Paraná, apresenta uma diversidade significativa em termos de indicadores sociais e econômicos, refletida nas suas estatísticas demográficas, educacionais e de saúde. Este artigo fornece uma análise detalhada dos dados disponíveis para diversos municípios da região, destacando aspectos importantes como crescimento populacional, nível de escolaridade, e condições de vida.</p>
+        </div>
+
+        <div class="resumo2">
+            <h2>Crescimento Populacional e Composição</h2>
+
+            <div class="image-container">
+                <img src="https://media.tribunadointerior.com.br/2024/08/65839d76-campo_mourao.jpg" alt="Campo Mourão">
+            </div>
+            <p>Nos últimos anos, a região Comcam experimentou variações consideráveis em seu crescimento populacional. Cidades como Araruna e Campo Mourão mostraram um aumento substancial na população entre os censos de 2000 e 2022. Em Araruna, a população cresceu de 13.081 em 2000 para 14.485 em 2022, enquanto Campo Mourão viu um crescimento de 80.476 para 99.432 no mesmo período. Em contraste, cidades menores como Corumbataí do Sul e Boa Esperança mostraram um crescimento mais modesto, refletindo suas dinâmicas locais e limitações de recursos.</p>
+        </div>
+
+        <div class="resumo1">
+            <h2>Dados Econômicos</h2>
+
+            <div class="image-container">
+                <img src="https://www.farol.pr.gov.br/fotos/1613680220g.jpg" alt="Indicadores econômicos">
+            </div>
+            <p>Os salários médios mensais variam consideravelmente entre os municípios. Boa Esperança destaca-se com um salário médio de 2,5 salários mínimos, enquanto Fênix apresenta um salário médio de 1,6 salários mínimos. Esses dados sugerem diferenças significativas no poder aquisitivo e nas condições econômicas locais.
+                O PIB per capita também revela disparidades notáveis. Municípios como Farol e Boa Esperança apresentam PIB per capita de R$72.035,16 e R$71.587,36, respectivamente, contrastando com valores menores em cidades como Corumbataí do Sul e Barbosa Ferraz. Essas diferenças refletem as variações na atividade econômica e na riqueza gerada em cada localidade</p>
+        </div>
+
+        <div class="resumo2">
+            <h2>Educação e Escolaridade</h2>
+
+            <div class="image-container">
+                <img src="https://i0.wp.com/www.paranaturismo.com.br/wp-content/uploads/2013/03/boaesperancadoiguacu1.jpg?ssl=1" alt="Indicadores de Educação na Região Comcam">
+            </div>
+            <p>A taxa de escolaridade é uma importante medida de desenvolvimento, e a região Comcam exibe um panorama variado. Araruna se destaca com uma taxa de escolaridade de 99,1%, ocupando a primeira posição na região/estado, enquanto Boa Esperança apresenta uma taxa de 99,00%, evidenciando um alto nível de educação. Em termos de Índice de Desenvolvimento da Educação Básica (IDEB), cidades como Juranda e Janiópolis mostram desempenhos elevados, com IDEB de 6,3 e 7,3, respectivamente, refletindo um forte compromisso com a educação básica.</p>
+        </div>
+
+        <div class="resumo1">
+            <h2>Saúde e Qualidade de Vida</h2>
+
+            <div class="image-container">
+                <img src="https://www.viajeparana.com/sites/viaje-parana/arquivos_restritos/files/imagem/2019-12/vista_aerea_nova_cantu.jpg" alt="Indicadores de Saúde na Região Comcam">
+            </div>
+            <p>Os índices de mortalidade infantil, um indicador crucial da qualidade de vida, variam bastante. Iretama e Farol apresentam taxas de mortalidade infantil de 24,39 e 35,71 óbitos por mil nascidos vivos, respectivamente. Estes números indicam diferenças significativas nas condições de saúde e nos serviços médicos disponíveis nas diferentes localidades.Além disso, o esgotamento sanitário e a arborização são indicadores importantes das condições de vida urbana. Nova Cantu e Campo Mourão destacam-se com altos níveis de esgotamento sanitário e arborização, refletindo um ambiente urbano mais sustentável e saudável. No entanto, várias cidades ainda não têm dados completos disponíveis sobre esses indicadores, o que limita a análise abrangente de suas condições ambientais.</p>
+        </div>
+
+        <div class="resumo2">
+            <h2>Conclusão</h2>
+   
+            <div class="image-container">
+                <img src="https://www.viajeparana.com/sites/viaje-parana/arquivos_restritos/files/imagem/2019-05/portal_da_ciadade.jpg" alt="Conclusão e perspectivas futuras">
+            </div>
+            <p>A análise dos dados dos municípios da Região Comcam revela uma rica tapeçaria de variações sociais e econômicas. Enquanto algumas cidades mostram avanços significativos em termos de crescimento populacional, educação e condições econômicas, outras enfrentam desafios em áreas como saúde e infraestrutura. Estes dados fornecem uma visão valiosa para políticas públicas e planejamento regional, ajudando a direcionar esforços para promover o desenvolvimento equilibrado e sustentável em toda a região.A contínua coleta e análise de dados é essencial para entender as necessidades e oportunidades específicas de cada município, assegurando que as políticas e investimentos sejam direcionados de maneira eficaz para melhorar a qualidade de vida de todos os habitantes da região Comcam.</p>
+        </div>
     </main>
+
     <footer>
         <div>
-
-            <h1>Fontes: </h1>
+            <h1>Fontes:</h1>
             <ul>
                 <li><a href="https://sidra.ibge.gov.br/pesquisa/censo-demografico/demografico-2022/universo-populacao-por-idade-e-sexo">IBGE - Censo 2022</a></li>
                 <li><a href="https://sidra.ibge.gov.br/pesquisa/censo-demografico/demografico-2010/universo-caracteristicas-da-populacao-e-dos-domicilios">IBGE - Censo 2000 e 2010</a></li>
@@ -59,16 +168,13 @@
             </ul>
         </div>
         <div>
-            <img src="./logo2.png" alt="">
-        </div>
-        <div>
-            <h1>Créditos: </h1>
+            <h1>Créditos:</h1>
             <ul>
-                <li><a href="https://sidra.ibge.gov.br/pesquisa/censo-demografico/demografico-2022/universo-populacao-por-idade-e-sexo">Marcelo Ast de souza</a></li>
+                <li><a href="https://sidra.ibge.gov.br/pesquisa/censo-demografico/demografico-2022/universo-populacao-por-idade-e-sexo">Marcelo Ast de Souza</a></li>
                 <li><a href="https://sidra.ibge.gov.br/pesquisa/censo-demografico/demografico-2010/universo-caracteristicas-da-populacao-e-dos-domicilios">Pedro Henrique Tunes Degasperi</a></li>
                 <li><a href="https://cidades.ibge.gov.br/">Ryan</a></li>
                 <li><a href="https://cidades.ibge.gov.br/">Mateus Augusto</a></li>
-                <li><a href="https://cidades.ibge.gov.br/">Andrei Abner </a></li>
+                <li><a href="https://cidades.ibge.gov.br/">Andrei Abner</a></li>
                 <li><a href="https://cidades.ibge.gov.br/">Allan</a></li>
             </ul>
         </div>
