@@ -33,6 +33,7 @@
 
     .form-label {
     margin-bottom: 0.5rem;
+    font-size: 1.25rem;
     }
 
     .form-input,
@@ -70,6 +71,10 @@
     cursor: pointer;
     padding: 13px 5px;
     border-radius: 0.375rem;
+}
+.form-label span{
+    color: red;
+    font-size: .75rem;
 }
 .form-submit:hover{
     filter: brightness(.75);
