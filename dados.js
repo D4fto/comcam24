@@ -54,6 +54,10 @@ export const dados = [
                 valor: 23.26,
                 regiao: 11,
                 estado: 57
+            },
+            IDHM:{
+                _2000: 0.496,
+                _2010: 0.667
             }
         }
     },
@@ -112,6 +116,10 @@ export const dados = [
                 valor: 26.46,
                 regiao: 7,
                 estado: 39
+            },
+            IDHM:{
+                _2000: 0.602,
+                _2010: 0.704
             }
         }
     },
@@ -170,6 +178,10 @@ export const dados = [
                 valor: 26.32,
                 regiao: 8,
                 estado: 40
+            },
+            IDHM:{
+                _2000: 0.580,
+                _2010: 0.696
             }
         }
     },
@@ -228,6 +240,10 @@ export const dados = [
                 valor: 47.62,
                 regiao: 2,
                 estado: 9
+            },
+            IDHM:{
+                _2000: 0.615,
+                _2010: 0.720
             }
         }
     },
@@ -286,6 +302,10 @@ export const dados = [
                 valor: 14.56,
                 regiao: 14,
                 estado: 127
+            },
+            IDHM:{
+                _2000: 0.598,
+                _2010: 0.704
             }
         }
     },
@@ -344,6 +364,10 @@ export const dados = [
                 valor: 10.08,
                 regiao: 17,
                 estado: 186
+            },
+            IDHM:{
+                _2000: 0.675,
+                _2010: 0.757
             }
         }
     },
@@ -402,6 +426,10 @@ export const dados = [
                 valor: 25.64,
                 regiao: 9,
                 estado: 43
+            },
+            IDHM:{
+                _2000: 0.507,
+                _2010: 0.638
             }
         }
     },
@@ -460,6 +488,10 @@ export const dados = [
                 valor: 58.82,
                 regiao: 1,
                 estado: 3
+            },
+            IDHM:{
+                _2000: 0.650,
+                _2010: 0.730
             }
         }
     },
@@ -518,6 +550,10 @@ export const dados = [
                 valor: 35.71,
                 regiao: 5,
                 estado: 20
+            },
+            IDHM:{
+                _2000: 0.571,
+                _2010: 0.715
             }
         }
     },
@@ -576,6 +612,10 @@ export const dados = [
                 valor: -1,
                 regiao: -1,
                 estado: -1
+            },
+            IDHM:{
+                _2000: 0.601,
+                _2010: 0.716
             }
         }
     },
@@ -634,6 +674,10 @@ export const dados = [
                 valor: 20.13,
                 regiao: 13,
                 estado: 75
+            },
+            IDHM:{
+                _2000: 0.610,
+                _2010: 0.731
             }
         }
     },
@@ -692,6 +736,10 @@ export const dados = [
                 valor: 24.39,
                 regiao: 10,
                 estado: 50
+            },
+            IDHM:{
+                _2000: 0.543,
+                _2010: 0.665
             }
         }
     },
@@ -750,6 +798,10 @@ export const dados = [
                 valor: -1,
                 regiao: -1,
                 estado: -1
+            },
+            IDHM:{
+                _2000: 0.578,
+                _2010: 0.696
             }
         }
     },
@@ -808,6 +860,10 @@ export const dados = [
                 valor: 11.24,
                 regiao: 16,
                 estado: 174
+            },
+            IDHM:{
+                _2000: 0.594,
+                _2010: 0.708
             }
         }
     },
@@ -866,6 +922,10 @@ export const dados = [
                 valor: -1,
                 regiao: -1,
                 estado: -1
+            },
+            IDHM:{
+                _2000: 0.530,
+                _2010: 0.668
             }
         }
     },
@@ -924,6 +984,10 @@ export const dados = [
                 valor: 7.19,
                 regiao: 18,
                 estado: 237
+            },
+            IDHM:{
+                _2000: 0.604,
+                _2010: 0.719
             }
         }
     },
@@ -982,6 +1046,10 @@ export const dados = [
                 valor: -1,
                 regiao: -1,
                 estado: -1
+            },
+            IDHM:{
+                _2000: 0.567,
+                _2010: 0.675
             }
         }
     },
@@ -1040,6 +1108,10 @@ export const dados = [
                 valor: 30,
                 regiao: 6,
                 estado: 28
+            },
+            IDHM:{
+                _2000: 0.528,
+                _2010: 0.658
             }
         }
     },
@@ -1098,6 +1170,10 @@ export const dados = [
                 valor: 37.27,
                 regiao: 4,
                 estado: 16
+            },
+            IDHM:{
+                _2000: 0.616,
+                _2010: 0.723
             }
         }
     },
@@ -1156,6 +1232,10 @@ export const dados = [
                 valor: 22.73,
                 regiao: 12,
                 estado: 61
+            },
+            IDHM:{
+                _2000: 0.561,
+                _2010: 0.710
             }
         }
     },
@@ -1214,6 +1294,10 @@ export const dados = [
                 valor: -1,
                 regiao: -1,
                 estado: -1
+            },
+            IDHM:{
+                _2000: 0.596,
+                _2010: 0.715
             }
         }
     },
@@ -1272,6 +1356,10 @@ export const dados = [
                 valor: 43.48,
                 regiao: 3,
                 estado: 10
+            },
+            IDHM:{
+                _2000: 0.584,
+                _2010: 0.704
             }
         }
     },
@@ -1330,6 +1418,10 @@ export const dados = [
                 valor: 12.58,
                 regiao: 15,
                 estado: 153
+            },
+            IDHM:{
+                _2000: 0.547,
+                _2010: 0.681
             }
         }
     },
@@ -1388,6 +1480,10 @@ export const dados = [
                 valor: 19.05,
                 regiao: 4,
                 estado: 83
+            },
+            IDHM:{
+                _2000: 0.624,
+                _2010: 0.728
             }
         }
     },
@@ -1446,6 +1542,10 @@ export const dados = [
                 valor: 6.73,
                 regiao: 19,
                 estado: 244
+            },
+            IDHM:{
+                _2000: 0.620,
+                _2010: 0.739
             }
         }
     }

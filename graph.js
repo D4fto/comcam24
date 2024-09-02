@@ -7,6 +7,7 @@ function drawAll() {
     google.charts.setOnLoadCallback(drawChart4);
     google.charts.setOnLoadCallback(drawChart5);
     google.charts.setOnLoadCallback(drawChart6);
+    google.charts.setOnLoadCallback(drawChart7);
 }
 google.charts.load('current', { packages: ['corechart'], 'language': 'pt' });
 drawAll()
@@ -308,6 +309,47 @@ function drawChart6() {
 
     // Draw
     const chart = new google.visualization.BarChart(document.getElementById('myChart6'));
+    chart.draw(data, options);
+
+}
+function drawChart7() {
+    let datas = [['cidade', 'IDHM 2000', { role: 'tooltip' }, 'IDHM 2010', { role: 'tooltip' }]]
+    for (let i = 0; i < dados.length; i++) {
+        datas.push([dados[i].nome, dados[i].dados.IDHM._2000 >= 0 ? dados[i].dados.IDHM._2000 : null, dados[i].dados.IDHM._2000 >= 0 ? String(dados[i].dados.IDHM._2000).replace('.', ',') : 'Sem dados', dados[i].dados.IDHM._2010 >= 0 ? dados[i].dados.IDHM._2010 : null, dados[i].dados.IDHM._2010 >= 0 ? String(dados[i].dados.IDHM._2010).replace('.', ',') : 'Sem dados'])
+    }
+
+    // Set Data
+    const data = google.visualization.arrayToDataTable(datas);
+
+    // Set Options
+    const options = {
+        title: 'IDHM',
+        legend: {
+            position: 'top', textStyle: {
+                fontSize: 16
+            }
+        },
+        backgroundColor: 'transparent',
+        focusTarget: 'category',
+        chartArea: { bottom: 75, top: 150 },
+        bar: { groupWidth: '60%' },
+        hAxis: {
+
+            gridlines: {
+                color: 'black'
+            },
+        },
+        vAxis: {
+            textStyle: {
+                fontSize: 12,
+            },
+
+        },
+        colors: ['#DC3912','#5888e9']
+    };
+
+    // Draw
+    const chart = new google.visualization.BarChart(document.getElementById('myChart7'));
     chart.draw(data, options);
 
 }
