@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,26 +7,51 @@
     <link rel="icon"
     href="https://upload.wikimedia.org/wikipedia/commons/e/eb/Logo_UTFPR.jpeg"
     type="image/png">
-    <script src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="module" src="./graph.js" defer></script>
+    <link rel="stylesheet" href="./comcam.css">
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            main{
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                min-height: 500px;
+                h1{
+                    font-size: 3em;
+                }
+                a{
+                    font-size: 1.5em;
+                    color: var(--amarelo);
+                    transition: all .5s;
+                }
+                a:hover{
+                    transform: scale(1.25);
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+            footer, nav{
+                width: 100%;
+            }
+        }
+    </style>
 </head>
-<link rel="stylesheet" href="./comcam.css">
 <body>
     <nav>
         <ul>
             <a href="./" ><li>Resumo</li></a>
-            <a href="./comcam.html"><li>Tabela</li></a>
-            <a href="./graph.html" class="active"><li>Gráficos</li></a>
+            <a href="./comcam.html" class="active"><li>Tabela</li></a>
+            <a href="./graph.html"><li>Gráficos</li></a>
         </ul>
     </nav>
     <main>
-        <div id="myChart" style="max-width:100%; height:1000px;"></div>
-        <div id="myChart7" style="max-width:100%; height:1250px;"></div>
-        <div id="myChart2" style="max-width:100%; height:1000px;"></div>
-        <div id="myChart3" style="max-width:100%; height:1000px;"></div>
-        <div id="myChart4" style="max-width:100%; height:1000px;"></div>
-        <div id="myChart6" style="max-width:100%; height:1000px;"></div>
-        <div id="myChart5" style="max-width:100%; height:1000px;"></div>
+        <h1>Obrigado por sua mensagem!</h1>
+        <a href="./contato.html">Clique Aqui Para Voltar</a>
     </main>
     <footer>
         <div>

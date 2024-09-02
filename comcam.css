@@ -173,7 +173,7 @@ tbody tr:nth-child(even){
     }
 }
 body {
-    margin-top: 50px;
+    padding-top: 50px;
 }
 nav ul {
     list-style: none;
