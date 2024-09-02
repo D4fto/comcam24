@@ -60,9 +60,9 @@ function drawChart() {
 
 }
 function drawChart2() {
-    let datas = [['cidade', 'taxa de escolaridade', { role: 'tooltip' }]]
+    let datas = [['cidade', 'taxa de escolaridade', { role: 'tooltip' },{role: 'style'}]]
     for (let i = 0; i < dados.length; i++) {
-        datas.push([dados[i].nome, dados[i].dados.taxaEscolaridade.valor / 100, String(dados[i].dados.taxaEscolaridade.valor).replace('.', ',') + "%"])
+        datas.push([dados[i].nome, dados[i].dados.taxaEscolaridade.valor / 100, String(dados[i].dados.taxaEscolaridade.valor).replace('.', ',') + "%",i%2==0?'#3366cc':'#5888e9'])
     }
 
     // Set Data
@@ -121,7 +121,7 @@ function drawChart3() {
         backgroundColor: 'transparent',
         focusTarget: 'category',
         chartArea: { bottom: 75, top: 150 },
-        bar: { groupWidth: '60%' },
+        bar: { groupWidth: '75%' },
         hAxis: {
 
             gridlines: {
@@ -133,7 +133,8 @@ function drawChart3() {
                 fontSize: 12,
             },
 
-        }
+        },
+        colors: ['#5888e9', '#DC3912']
     };
 
     // Draw
@@ -142,9 +143,9 @@ function drawChart3() {
 
 }
 function drawChart4() {
-    let datas = [['cidade', 'Esgotamento sanitário', { role: 'tooltip' }]]
+    let datas = [['cidade', 'Esgotamento sanitário', { role: 'tooltip' }, {role:'style'}]]
     for (let i = 0; i < dados.length; i++) {
-        datas.push([dados[i].nome, dados[i].dados.esgotamentoSanitario.valor / 100, String(dados[i].dados.esgotamentoSanitario.valor).replace('.', ',') + "%"])
+        datas.push([dados[i].nome, dados[i].dados.esgotamentoSanitario.valor / 100, String(dados[i].dados.esgotamentoSanitario.valor).replace('.', ',') + "%",i%2==0?'#1166c2':'#5177e4'])
     }
 
     // Set Data
@@ -271,9 +272,9 @@ function drawChart5() {
 
 }
 function drawChart6() {
-    let datas = [['cidade', 'Mortalidade infantil', { role: 'tooltip' }]]
+    let datas = [['cidade', 'Mortalidade infantil', { role: 'tooltip' }, {role: 'style'}]]
     for (let i = 0; i < dados.length; i++) {
-        datas.push([dados[i].nome, dados[i].dados.mortalidadeInfantil.valor >= 0 ? dados[i].dados.mortalidadeInfantil.valor : null, dados[i].dados.mortalidadeInfantil.valor >= 0 ? String(dados[i].dados.mortalidadeInfantil.valor).replace('.', ',') + ' óbitos por mil nascidos vivos' : 'Sem dados'])
+        datas.push([dados[i].nome, dados[i].dados.mortalidadeInfantil.valor >= 0 ? dados[i].dados.mortalidadeInfantil.valor : null, dados[i].dados.mortalidadeInfantil.valor >= 0 ? String(dados[i].dados.mortalidadeInfantil.valor).replace('.', ',') + ' óbitos por mil nascidos vivos' : 'Sem dados',i%2==0?'#3366cc':'#5888e9'])
     }
 
     // Set Data
