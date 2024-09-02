@@ -14,9 +14,15 @@ drawAll()
 window.addEventListener('resize', function () {
     if (window.innerWidth <= 768) {
         document.querySelector('#myChart5').style.height = '500px'
+        document.querySelector('#myChart7').style.height = '850px'
+    }
+    else if(window.innerWidth <= 1000){
+        document.querySelector('#myChart7').style.height = '1000px'
+        
     }
     else {
         document.querySelector('#myChart5').style.height = '1000px'
+        document.querySelector('#myChart7').style.height = '1250px'
     }
     drawAll()
 });
@@ -113,7 +119,7 @@ function drawChart3() {
 
     // Set Options
     const options = {
-        title: 'IDEB',
+        title: 'IDEB - Índice de Desenvolvimento da Educação Básica',
         legend: {
             position: 'top', textStyle: {
                 fontSize: 16
@@ -323,7 +329,7 @@ function drawChart7() {
 
     // Set Options
     const options = {
-        title: 'IDHM',
+        title: 'IDHM - Índice de Desenvolvimento Humano Municipal',
         legend: {
             position: 'top', textStyle: {
                 fontSize: 16
@@ -332,12 +338,14 @@ function drawChart7() {
         backgroundColor: 'transparent',
         focusTarget: 'category',
         chartArea: { bottom: 75, top: 150 },
-        bar: { groupWidth: '60%' },
+        bar: { groupWidth: '75%' },
         hAxis: {
 
             gridlines: {
                 color: 'black'
             },
+            
+            maxValue:1,
         },
         vAxis: {
             textStyle: {
