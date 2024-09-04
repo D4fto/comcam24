@@ -5,12 +5,16 @@ export const dados = [
             populacao2000:{
                 homem: 3611,
                 mulher: 3388,
-                total: 6999
+                total: 6999,
+                urbana: 2119,
+                rural: 4880
             },
             populacao2010:{
                 homem: 2202,
                 mulher: 2104,
-                total: 4306
+                total: 4306,
+                urbana: 2135,
+                rural: 2171
             },
             populacao2022:{
                 homem: 3590,
@@ -68,12 +72,15 @@ export const dados = [
                 homem: 6718,
                 mulher: 6363,
                 total: 13081,
-                urbano: 0
+                urbana: 9134,
+                rural: 3947
             },
             populacao2010:{
                 homem: 6824,
                 mulher: 6595,
-                total: 13419
+                total: 13419,
+                urbana: 10475,
+                rural: 2944
             },
             populacao2022:{
                 homem: 7216,
@@ -130,12 +137,16 @@ export const dados = [
             populacao2000:{
                 homem: 7096,
                 mulher: 7014,
-                total: 14110
+                total: 14110,
+                urbana: 9735,
+                rural: 4375
             },
             populacao2010:{
                 homem: 6351,
                 mulher: 6305,
-                total: 12656
+                total: 12656,
+                urbana: 9581,
+                rural: 3075
             },
             populacao2022:{
                 homem: 5363,
@@ -192,12 +203,16 @@ export const dados = [
             populacao2000:{
                 homem: 2640,
                 mulher: 2522,
-                total: 5162
+                total: 5162,
+                urbana: 2579,
+                rural: 2583
             },
             populacao2010:{
                 homem: 2280,
                 mulher: 2288,
-                total: 4568
+                total: 4568,
+                urbana: 2640,
+                rural: 1928
             },
             populacao2022:{
                 homem: 2240,
@@ -254,12 +269,16 @@ export const dados = [
             populacao2000:{
                 homem: 8517,
                 mulher: 8501,
-                total: 17018
+                total: 17018,
+                urbana: 12692,
+                rural: 4326
             },
             populacao2010:{
                 homem: 7647,
                 mulher: 7747,
-                total: 15394
+                total: 15394,
+                urbana: 12557,
+                rural: 2837
             },
             populacao2022:{
                 homem: 7806,
@@ -316,12 +335,16 @@ export const dados = [
             populacao2000:{
                 homem: 38869,
                 mulher: 41607,
-                total: 80476
+                total: 80476,
+                urbana: 74754,
+                rural: 5722
             },
             populacao2010:{
                 homem: 42013,
                 mulher: 45181,
-                total: 87194
+                total: 87194,
+                urbana: 82676,
+                rural: 4518
             },
             populacao2022:{
                 homem: 47942,
@@ -378,12 +401,16 @@ export const dados = [
             populacao2000:{
                 homem: 2660,
                 mulher: 2286,
-                total: 4946
+                total: 4946,
+                urbana: 1998,
+                rural: 2948
             },
             populacao2010:{
                 homem: 2030,
                 mulher: 1972,
-                total: 4002
+                total: 4002,
+                urbana: 2127,
+                rural: 1875
             },
             populacao2022:{
                 homem: 1886,
@@ -440,12 +467,16 @@ export const dados = [
             populacao2000:{
                 homem: 6968,
                 mulher: 7114,
-                total: 14082
+                total: 14082,
+                urbana: 11129,
+                rural: 2953
             },
             populacao2010:{
                 homem: 6926,
                 mulher: 6980,
-                total: 13906
+                total: 13906,
+                urbana: 12278,
+                rural: 1628
             },
             populacao2022:{
                 homem: 6048,
@@ -502,12 +533,16 @@ export const dados = [
             populacao2000:{
                 homem: 2055,
                 mulher: 1908,
-                total: 3963
+                total: 3963,
+                urbana: 1944,
+                rural: 2019
             },
             populacao2010:{
                 homem: 1723,
                 mulher: 1749,
-                total: 3472
+                total: 3472,
+                urbana: 2018,
+                rural: 1454
             },
             populacao2022:{
                 homem: 1514,
@@ -564,12 +599,16 @@ export const dados = [
             populacao2000:{
                 homem: 2453,
                 mulher: 2489,
-                total: 4942
+                total: 4942,
+                urbana: 3836,
+                rural: 1106
             },
             populacao2010:{
                 homem: 2398,
                 mulher: 2404,
-                total: 4802
+                total: 4802,
+                urbana: 3995,
+                rural: 807
             },
             populacao2022:{
                 homem: 2212,
@@ -626,12 +665,16 @@ export const dados = [
             populacao2000:{
                 homem: 14576,
                 mulher: 15174,
-                total: 29750
+                total: 29750,
+                urbana: 24534,
+                rural: 5216
             },
             populacao2010:{
                 homem: 14006,
                 mulher: 15012,
-                total: 29018
+                total: 29018,
+                urbana: 25242,
+                rural: 3776
             },
             populacao2022:{
                 homem: 13661,
@@ -688,12 +731,16 @@ export const dados = [
             populacao2000:{
                 homem: 5806,
                 mulher: 5529,
-                total: 11335
+                total: 11335,
+                urbana: 3156,
+                rural: 5179
             },
             populacao2010:{
                 homem: 5433,
                 mulher: 5189,
-                total: 10622
+                total: 10622,
+                urbana: 6187,
+                rural: 4435
             },
             populacao2022:{
                 homem: 5412,
@@ -750,12 +797,16 @@ export const dados = [
             populacao2000:{
                 homem: 4110,
                 mulher: 3974,
-                total: 8084
+                total: 8084,
+                urbana: 4368,
+                rural: 3716
             },
             populacao2010:{
                 homem: 3273,
                 mulher: 3243,
-                total: 6516
+                total: 6516,
+                urbana: 4038,
+                rural: 2494
             },
             populacao2022:{
                 homem: 2963,
@@ -812,12 +863,16 @@ export const dados = [
             populacao2000:{
                 homem: 4192,
                 mulher: 4096,
-                total: 8288
+                total: 8288,
+                urbana: 5764,
+                rural: 2370
             },
             populacao2010:{
                 homem: 3723,
                 mulher: 3608,
-                total: 7331
+                total: 7331,
+                urbana: 5839,
+                rural: 1802
             },
             populacao2022:{
                 homem: 3328,
@@ -874,12 +929,16 @@ export const dados = [
             populacao2000:{
                 homem: 3971,
                 mulher: 3725,
-                total: 7696
+                total: 7696,
+                urbana: 4138,
+                rural: 3402
             },
             populacao2010:{
                 homem: 3584,
                 mulher: 3476,
-                total: 7060
+                total: 7060,
+                urbana: 4756,
+                rural: 2559
             },
             populacao2022:{
                 homem: 3511,
@@ -936,12 +995,16 @@ export const dados = [
             populacao2000:{
                 homem: 6822,
                 mulher: 6633,
-                total: 13455
+                total: 13455,
+                urbana: 9014,
+                rural: 6142
             },
             populacao2010:{
                 homem: 6875,
                 mulher: 6777,
-                total: 13652
+                total: 13652,
+                urbana: 8984,
+                rural: 4977
             },
             populacao2022:{
                 homem: 6987,
@@ -998,12 +1061,16 @@ export const dados = [
             populacao2000:{
                 homem: 6001,
                 mulher: 5870,
-                total: 11871
+                total: 11871,
+                urbana: 9383,
+                rural: 4012
             },
             populacao2010:{
                 homem: 5864,
                 mulher: 5815,
-                total: 11679
+                total: 11679,
+                urbana: 9933,
+                rural: 2673
             },
             populacao2022:{
                 homem: 5445,
@@ -1060,12 +1127,16 @@ export const dados = [
             populacao2000:{
                 homem: 4824,
                 mulher: 4477,
-                total: 9301
+                total: 9301,
+                urbana: 3916,
+                rural: 5998
             },
             populacao2010:{
                 homem: 3893,
                 mulher: 3762,
-                total: 7655
+                total: 7655,
+                urbana: 4104,
+                rural: 3321
             },
             populacao2022:{
                 homem: 3646,
@@ -1122,12 +1193,16 @@ export const dados = [
             populacao2000:{
                 homem: 6638,
                 mulher: 6744,
-                total: 13382
+                total: 13382,
+                urbana: 10491,
+                rural: 2996
             },
             populacao2010:{
                 homem: 6434,
                 mulher: 6548,
-                total: 12982
+                total: 12982,
+                urbana: 1109,
+                rural: 2615
             },
             populacao2022:{
                 homem: 6247,
@@ -1184,12 +1259,16 @@ export const dados = [
             populacao2000:{
                 homem: 2731,
                 mulher: 2602,
-                total: 5333
+                total: 5333,
+                urbana: 2685,
+                rural: 2648
             },
             populacao2010:{
                 homem: 2391,
                 mulher: 2465,
-                total: 4856
+                total: 4856,
+                urbana: 2912,
+                rural: 1944
             },
             populacao2022:{
                 homem: 2051,
@@ -1246,12 +1325,16 @@ export const dados = [
             populacao2000:{
                 homem: 3280,
                 mulher: 3293,
-                total: 6573
+                total: 6573,
+                urbana: 3454,
+                rural: 2305
             },
             populacao2010:{
                 homem: 2818,
                 mulher: 2823,
-                total: 5641
+                total: 5641,
+                urbana: 3811,
+                rural: 1277
             },
             populacao2022:{
                 homem: 2588,
@@ -1308,12 +1391,16 @@ export const dados = [
             populacao2000:{
                 homem: 1600,
                 mulher: 1434,
-                total: 3034
+                total: 3034,
+                urbana: 2066,
+                rural: 1051
             },
             populacao2010:{
                 homem: 1367,
                 mulher: 1291,
-                total: 2658
+                total: 2658,
+                urbana: 2303,
+                rural: 544
             },
             populacao2022:{
                 homem: 1223,
@@ -1370,12 +1457,16 @@ export const dados = [
             populacao2000:{
                 homem: 6991,
                 mulher: 6641,
-                total: 13632
+                total: 13632,
+                urbana: 6826,
+                rural: 6806
             },
             populacao2010:{
                 homem: 5823,
                 mulher: 5714,
-                total: 11537
+                total: 11537,
+                urbana: 7120,
+                rural: 4417
             },
             populacao2022:{
                 homem: 5729,
@@ -1432,12 +1523,16 @@ export const dados = [
             populacao2000:{
                 homem: 8391,
                 mulher: 8465,
-                total: 16856
+                total: 16856,
+                urbana: 11177,
+                rural: 3463
             },
             populacao2010:{
                 homem: 7954,
                 mulher: 8225,
-                total: 16179
+                total: 16179,
+                urbana: 13051,
+                rural: 2725
             },
             populacao2022:{
                 homem: 7655,
@@ -1494,12 +1589,16 @@ export const dados = [
             populacao2000:{
                 homem: 10606,
                 mulher: 10279,
-                total: 20885
+                total: 20885,
+                urbana: 17633,
+                rural: 4960
             },
             populacao2010:{
                 homem: 10762,
                 mulher: 10630,
-                total: 21392
+                total: 21392,
+                urbana: 18397,
+                rural: 3161
             },
             populacao2022:{
                 homem: 10889,

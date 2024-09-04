@@ -8,6 +8,10 @@ function drawAll() {
     google.charts.setOnLoadCallback(drawChart5);
     google.charts.setOnLoadCallback(drawChart6);
     google.charts.setOnLoadCallback(drawChart7);
+    google.charts.setOnLoadCallback(drawChart8);
+    google.charts.setOnLoadCallback(drawChart9);
+    google.charts.setOnLoadCallback(drawChart10);
+    google.charts.setOnLoadCallback(drawChart11);
 }
 google.charts.load('current', { packages: ['corechart'], 'language': 'pt' });
 drawAll()
@@ -358,6 +362,184 @@ function drawChart7() {
 
     // Draw
     const chart = new google.visualization.BarChart(document.getElementById('myChart7'));
+    chart.draw(data, options);
+
+}
+function drawChart8() {
+    let datas = [['cidade', '2000', '2010']]
+    for (let i = 0; i < dados.length; i++) {
+        datas.push([dados[i].nome, dados[i].dados.populacao2000.urbana,dados[i].dados.populacao2010.urbana])
+    }
+
+    // Set Data
+    const data = google.visualization.arrayToDataTable(datas);
+
+    // Set Options
+    const options = {
+        title: 'População Urbana',
+        legend: {
+            position: 'top', textStyle: {
+                fontSize: 16
+            }
+        },
+        backgroundColor: 'transparent',
+        focusTarget: 'category',
+        chartArea: { bottom: 75, top: 150 },
+        bar: { groupWidth: '75%' },
+        hAxis: {
+
+            gridlines: {
+                color: 'black'
+            }
+        },
+        vAxis: {
+            textStyle: {
+                fontSize: 12,
+            },
+
+        },
+        colors: ['#DC3912','#5888e9']
+    };
+
+    // Draw
+    const chart = new google.visualization.BarChart(document.getElementById('myChart8'));
+    chart.draw(data, options);
+
+}
+function drawChart9() {
+    let datas = [['cidade', '2000', '2010']]
+    for (let i = 0; i < dados.length; i++) {
+        datas.push([dados[i].nome, dados[i].dados.populacao2000.rural,dados[i].dados.populacao2010.rural])
+    }
+
+    // Set Data
+    const data = google.visualization.arrayToDataTable(datas);
+
+    // Set Options
+    const options = {
+        title: 'População rural',
+        legend: {
+            position: 'top', textStyle: {
+                fontSize: 16
+            }
+        },
+        backgroundColor: 'transparent',
+        focusTarget: 'category',
+        chartArea: { bottom: 75, top: 150 },
+        bar: { groupWidth: '75%' },
+        hAxis: {
+
+            gridlines: {
+                color: 'black'
+            }
+            
+        },
+        vAxis: {
+            textStyle: {
+                fontSize: 12,
+            },
+
+        },
+        colors: ['#5888e9','#DC3912']
+    };
+
+    // Draw
+    const chart = new google.visualization.BarChart(document.getElementById('myChart9'));
+    chart.draw(data, options);
+
+}
+function drawChart10() {
+    let urbana = 0
+    let rural = 0
+    for (let i = 0; i < dados.length; i++) {
+        urbana+=Number(dados[i].dados.populacao2000.urbana)
+        rural+=Number(dados[i].dados.populacao2000.rural)
+    }
+    let datas = [
+        ['região', 'total'],
+        ['urbana',urbana],
+        ['rural',rural]
+    ]
+    
+
+    // Set Data
+    const data = google.visualization.arrayToDataTable(datas);
+
+    // Set Options
+    const options = {
+        title: 'População urbana/rural na rgião da Comcam 2000',
+        legend: {
+            position: 'top', textStyle: {
+                fontSize: 16
+            }
+        },
+        backgroundColor: 'transparent',
+        hAxis: {
+
+            gridlines: {
+                color: 'black'
+            }
+            
+        },
+        vAxis: {
+            textStyle: {
+                fontSize: 12,
+            },
+
+        },
+        colors: ['#5888e9','#DC3912']
+    };
+
+    // Draw
+    const chart = new google.visualization.PieChart(document.getElementById('myChart10'));
+    chart.draw(data, options);
+
+}
+function drawChart11() {
+    let urbana = 0
+    let rural = 0
+    for (let i = 0; i < dados.length; i++) {
+        urbana+=Number(dados[i].dados.populacao2010.urbana)
+        rural+=Number(dados[i].dados.populacao2010.rural)
+    }
+    let datas = [
+        ['região', 'total'],
+        ['urbana',urbana],
+        ['rural',rural]
+    ]
+    
+
+    // Set Data
+    const data = google.visualization.arrayToDataTable(datas);
+
+    // Set Options
+    const options = {
+        title: 'População urbana/rural na rgião da Comcam 2010',
+        legend: {
+            position: 'top', textStyle: {
+                fontSize: 16
+            }
+        },
+        backgroundColor: 'transparent',
+
+        hAxis: {
+
+            gridlines: {
+                color: 'black'
+            }
+            
+        },
+        vAxis: {
+            textStyle: {
+                fontSize: 12,
+            },
+
+        },
+        colors: ['#5888e9','#DC3912']
+    };
+
+    // Draw
+    const chart = new google.visualization.PieChart(document.getElementById('myChart11'));
     chart.draw(data, options);
 
 }

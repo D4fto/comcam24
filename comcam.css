@@ -268,7 +268,7 @@ h2{
     text-align: justify;
 }
 footer img{
-    max-height: 100px;
+    max-height: 125px;
 }
 footer a{
     font-family: 'roboto', sans-serif;
@@ -276,6 +276,7 @@ footer a{
     color:#ffffff;
 }
 footer h1{
+    margin-top:20px;
     font-size: 1em;
     color: #ffffff;
 }
