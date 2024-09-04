@@ -67,7 +67,8 @@ export const dados = [
             populacao2000:{
                 homem: 6718,
                 mulher: 6363,
-                total: 13081
+                total: 13081,
+                urbano: 0
             },
             populacao2010:{
                 homem: 6824,
