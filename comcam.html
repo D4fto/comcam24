@@ -929,7 +929,17 @@
             </tfoot>
         </table>
     </main>
-
+    <script>
+        const trs = document.querySelector('tbody').querySelectorAll('tr')
+        let sum=0
+        for (let i = 0; i < trs.length; i++) {
+            const element = trs[i].querySelectorAll('td');
+            console.log(element[9].innerHTML)
+            sum+=parseInt(element[9].innerHTML)
+            
+        }
+        console.log(sum)
+    </script>
 </body>
 
 </html>
