@@ -1,5 +1,10 @@
 import { dados } from './dados.js';
 
+let sum = 0
+for (const item of dados) {
+    sum+=item.dados.populacao2022.total
+}
+console.log(sum)
 function drawAll() {
     google.charts.setOnLoadCallback(drawChart);
     google.charts.setOnLoadCallback(drawChart2);

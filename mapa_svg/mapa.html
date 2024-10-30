@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        div{
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            height: 1044px;
+            width: 1059px;
+            transform: scale(1);
+            transform-origin: 0 0;
+        }
+        g>path{
+            transform: translate(-46.85%,-58.5%) scale(3.17);
+        }
+        #Municï¿½pios>*{
+
+            cursor: pointer;
+            /* transition: all s; */
+        }
+        #Municï¿½pios>*:hover{
+            fill: #0f0;
+        }
+        .clicked{
+            fill: #0f0 !important;
+        }
+
+    </style>
+</head>
+<body>
+    <p id="output"></p>
+    
+        <script>
+            function s(t){
+                console.log(t.id)
+                navigator.clipboard.writeText(t.innerHTML);
+                if(t.classList.contains('clicked')){
+                    t.classList.remove('clicked')
+                    
+                }else{
+                    t.classList.add('clicked')
+
+                }
+                document.getElementById('output').innerHTML=t.id
+            }
+            const municipios = document.getElementById('Municï¿½pios').querySelectorAll('path')
+            for (const item of municipios) {
+                item.addEventListener('click',()=>{
+                    s(item)
+                })
+            }
+        </script>
+</body>
+</html>

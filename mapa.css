@@ -1,0 +1,36 @@
+
+#mapa{
+    overflow: hidden;
+    height: 1044px;
+    width: 1059px;
+    svg{
+        transform-origin: 0 0;
+        
+    }
+}
+g>path{
+    transform: translate(-46.85%,-58.5%) scale(3.17);
+}
+#Municï¿½pios>*{
+
+    cursor: pointer;
+    /* transition: all s; */
+}
+#Municï¿½pios>*:hover{
+    fill: #0f0;
+}
+.clicked{
+    fill: #0f0 !important;
+}
+
+#mapaDiv{
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width: 700px){
+    #mapa{
+        width: 1700px;
+    }
+}
