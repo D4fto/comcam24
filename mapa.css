@@ -22,13 +22,18 @@
     background-color: var(--amarelo);
     color: #fff;
     border-radius: 10px;
-    border: none;
+    border: 3px solid transparent;
     font-size: 1.1rem;
+    cursor: pointer;
 }
 #verifyGraph:disabled{
     background-color: color-mix(in srgb, var(--amarelo) 20%, #ffffff48 80%);
     color: rgb(104, 104, 104);
     border: 1px dashed var(--amarelo);
+    cursor: unset;
+}
+#verifyGraph:hover:not(:disabled){
+    border: 3px solid var(--branco);
 }
 g>path{
     transform: translate(-46.85%,-58.5%) scale(3.17);
