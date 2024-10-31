@@ -1,7 +1,8 @@
-
+let mun = '000'
+const button = document.getElementById('verifyGraph')
 function s(t){
     console.log(t.id)
-    navigator.clipboard.writeText(t.innerHTML);
+    mun = t.id
     for (const element of municipios) {
         if(element.id!==t.id){
             element.classList.remove('clicked')
@@ -9,12 +10,21 @@ function s(t){
     }
     if(t.classList.contains('clicked')){
         t.classList.remove('clicked')
+        button.disabled=true
+        mun='000'
         
     }else{
         t.classList.add('clicked')
+        button.disabled=false
 
     }
-    document.getElementById('output').innerHTML=t.id
+
+}
+button.onclick = ()=>{
+    console.log('ojdfnsfn')
+    let url = window.location.href
+    url = url.substring(0,url.lastIndexOf('/')+1)
+    window.location.href = `${url}graph.html?mun=${mun}`
 }
 const municipios = document.getElementById('Municï¿½pios').querySelectorAll('path')
 for (const item of municipios) {

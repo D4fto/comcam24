@@ -8,6 +8,27 @@
         
     }
 }
+.divLegal{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 40px;
+    flex-wrap: wrap;
+}
+#verifyGraph{
+    padding: 10px;
+    min-width: fit-content;
+    background-color: var(--amarelo);
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.1rem;
+}
+#verifyGraph:disabled{
+    background-color: color-mix(in srgb, var(--amarelo) 20%, #ffffff48 80%);
+    color: rgb(104, 104, 104);
+    border: 1px dashed var(--amarelo);
+}
 g>path{
     transform: translate(-46.85%,-58.5%) scale(3.17);
 }
