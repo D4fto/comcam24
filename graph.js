@@ -681,7 +681,7 @@ function drawChart13() {
 
     // Set Options
     const options = {
-        title: `Esgotamento sanitario no município de ${searchById(mun)} 2000`,
+        title: `Esgotamento sanitario no município de ${searchById(mun)} 2010`,
         legend: {
             position: 'top', textStyle: {
                 fontSize: 16
