@@ -70,9 +70,70 @@ document.getElementById('municipios').addEventListener('input',()=>{
 })
 let sum = 0
 for (const item of dados) {
+    sum+=item.dados.populacao2000.urbana
+}
+console.log(sum)
+ sum = 0
+for (const item of dados) {
+    sum+=item.dados.populacao2000.rural
+}
+console.log(sum)
+ sum = 0
+for (const item of dados) {
+    sum+=item.dados.populacao2010.urbana
+}
+console.log(sum)
+ sum = 0
+for (const item of dados) {
+    sum+=item.dados.populacao2010.rural
+}
+console.log(sum)
+ sum = 0
+for (const item of dados) {
+    sum+=item.dados.populacao2000.homem
+}
+console.log(sum)
+sum = 0
+for (const item of dados) {
+    sum+=item.dados.populacao2000.mulher
+}
+console.log(sum)
+sum = 0
+for (const item of dados) {
+    sum+=item.dados.populacao2000.total
+}
+console.log(sum)
+sum = 0
+for (const item of dados) {
+    sum+=item.dados.populacao2010.homem
+}
+console.log(sum)
+sum = 0
+for (const item of dados) {
+    sum+=item.dados.populacao2010.mulher
+}
+console.log(sum)
+sum = 0
+for (const item of dados) {
+    sum+=item.dados.populacao2010.total
+}
+console.log(sum)
+sum = 0
+for (const item of dados) {
+    sum+=item.dados.populacao2022.homem
+}
+console.log(sum)
+sum = 0
+for (const item of dados) {
+    sum+=item.dados.populacao2022.mulher
+}
+console.log(sum)
+sum = 0
+for (const item of dados) {
     sum+=item.dados.populacao2022.total
 }
 console.log(sum)
+sum = 0
 function drawCity(){
     google.charts.setOnLoadCallback(drawChart12);
     google.charts.setOnLoadCallback(drawChart13);
