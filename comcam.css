@@ -289,3 +289,10 @@ footer h1{
     }
     gap: 25px;
 }
+#municipios{
+    position: fixed;
+    top: 60px;
+    right: 7px;
+    padding: 5px;
+    z-index: 1;
+}

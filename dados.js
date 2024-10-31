@@ -1,5 +1,35 @@
 export const dados = [
     {
+        nome: 'Selecione um município',
+        dados: {
+            populacao2000:{
+                homem: 1,
+                mulher: 1,
+                total: 1,
+                urbana: 1,
+                rural: 1
+            },
+            populacao2010:{
+                homem: 1,
+                mulher: 1,
+                total: 1,
+                urbana: 1,
+                rural: 1
+            },
+            populacao2022:{
+                homem: 1,
+                mulher: 1,
+                total: 1
+            },
+            esgotamentoSanitario:{
+                valor: 0,
+                regiao: 0,
+                estado: 0
+            },
+
+        }
+    },
+    {
         nome:'Altamira do Paraná',
         dados:{
             populacao2000:{

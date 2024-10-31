@@ -11,13 +11,18 @@
 g>path{
     transform: translate(-46.85%,-58.5%) scale(3.17);
 }
-#Municï¿½pios>*{
+#Municï¿½pios>path{
 
     cursor: pointer;
     /* transition: all s; */
 }
-#Municï¿½pios>*:hover{
-    fill: #0f0;
+#Municï¿½pios>text{
+
+    pointer-events: none;
+    /* transition: all s; */
+}
+#Municï¿½pios>path:hover{
+    fill: rgb(40, 73, 143);
 }
 .clicked{
     fill: #0f0 !important;
