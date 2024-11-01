@@ -1231,7 +1231,7 @@ export const dados = [
                 homem: 6434,
                 mulher: 6548,
                 total: 12982,
-                urbana: 1109,
+                urbana: 11009,
                 rural: 2615
             },
             populacao2022:{

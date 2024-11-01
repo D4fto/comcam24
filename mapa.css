@@ -49,10 +49,10 @@ g>path{
     /* transition: all s; */
 }
 #Municï¿½pios>path:hover{
-    fill: rgb(40, 73, 143);
+    fill: #28498f;
 }
 .clicked{
-    fill: #0f0 !important;
+    fill: #17326d !important;
 }
 
 #mapaDiv{
