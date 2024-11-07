@@ -224,7 +224,7 @@ function drawChart2() {
 
     // Set Options
     const options = {
-        title: 'Taxa de escolaridade 2010',
+        title: 'Taxa de escolaridade - 2010',
         legend: {
             position: 'top', textStyle: {
                 fontSize: 16
@@ -266,7 +266,7 @@ function drawChart3() {
 
     // Set Options
     const options = {
-        title: 'IDEB - Índice de Desenvolvimento da Educação Básica 2023',
+        title: 'IDEB - Índice de Desenvolvimento da Educação Básica - 2023',
         legend: {
             position: 'top', textStyle: {
                 fontSize: 16
@@ -307,7 +307,7 @@ function drawChart4() {
 
     // Set Options
     const options = {
-        title: 'Esgotamento sanitário 2010',
+        title: 'Esgotamento sanitário - 2010',
         legend: {
             position: 'top', textStyle: {
                 fontSize: 16
@@ -399,7 +399,7 @@ function drawChart5() {
 
     // Set Options
     const options = {
-        title: 'Arborização 2010',
+        title: 'Arborização - 2010',
         legend: { position: 'none' },
         backgroundColor: 'transparent',
         focusTarget: 'category',
@@ -436,7 +436,7 @@ function drawChart6() {
 
     // Set Options
     const options = {
-        title: 'Mortalidade infantil 2022',
+        title: 'Mortalidade infantil - 2022',
         legend: {
             position: 'top', textStyle: {
                 fontSize: 16
@@ -610,7 +610,7 @@ function drawChart10() {
 
     // Set Options
     const options = {
-        title: 'População urbana/rural na região da Comcam 2000',
+        title: 'População urbana/rural na região da Comcam - 2000',
         legend: {
             position: 'top', textStyle: {
                 fontSize: 16
@@ -657,7 +657,7 @@ function drawChart11() {
 
     // Set Options
     const options = {
-        title: 'População urbana/rural na região da Comcam 2010',
+        title: 'População urbana/rural na região da Comcam - 2010',
         legend: {
             position: 'top', textStyle: {
                 fontSize: 16
@@ -784,7 +784,7 @@ function drawChart14() {
 
     // Set Options
     const options = {
-        title: `População Masculina/Feminina no município de ${searchById(mun)} 2000`,
+        title: `População Masculina/Feminina no município de ${searchById(mun)} - 2000`,
         legend: {
             position: 'top', textStyle: {
                 fontSize: 16
@@ -826,7 +826,7 @@ function drawChart15() {
 
     // Set Options
     const options = {
-        title: `População Masculina/Feminina no município de ${searchById(mun)} 2010`,
+        title: `População Masculina/Feminina no município de ${searchById(mun)} - 2010`,
         legend: {
             position: 'top', textStyle: {
                 fontSize: 16
@@ -868,7 +868,7 @@ function drawChart16() {
 
     // Set Options
     const options = {
-        title: `População Masculina/Feminina no município de ${searchById(mun)} 2022`,
+        title: `População Masculina/Feminina no município de ${searchById(mun)} - 2022`,
         legend: {
             position: 'top', textStyle: {
                 fontSize: 16
