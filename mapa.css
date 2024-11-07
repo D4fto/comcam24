@@ -8,19 +8,51 @@
         
     }
 }
+.divLegal{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 40px;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+#verifyGraph{
+    padding: 10px;
+    min-width: fit-content;
+    background-color: var(--amarelo);
+    color: #fff;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+#verifyGraph:disabled{
+    background-color: color-mix(in srgb, var(--amarelo) 20%, #ffffff48 80%);
+    color: rgb(104, 104, 104);
+    border: 1px dashed var(--amarelo);
+    cursor: unset;
+}
+#verifyGraph:hover:not(:disabled){
+    border: 3px solid var(--branco);
+}
 g>path{
     transform: translate(-46.85%,-58.5%) scale(3.17);
 }
-#Municï¿½pios>*{
+#Municï¿½pios>path{
 
     cursor: pointer;
     /* transition: all s; */
 }
-#Municï¿½pios>*:hover{
-    fill: #0f0;
+#Municï¿½pios>text{
+
+    pointer-events: none;
+    /* transition: all s; */
+}
+#Municï¿½pios>path:hover{
+    fill: #28498f;
 }
 .clicked{
-    fill: #0f0 !important;
+    fill: #17326d !important;
 }
 
 #mapaDiv{
