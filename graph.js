@@ -86,7 +86,7 @@ function drawChart2() {
 
     // Set Options
     const options = {
-        title: 'Taxa de escolaridade',
+        title: 'Taxa de escolaridade 2010',
         legend: {
             position: 'top', textStyle: {
                 fontSize: 16
@@ -128,7 +128,7 @@ function drawChart3() {
 
     // Set Options
     const options = {
-        title: 'IDEB - Índice de Desenvolvimento da Educação Básica',
+        title: 'IDEB - Índice de Desenvolvimento da Educação Básica 2023',
         legend: {
             position: 'top', textStyle: {
                 fontSize: 16
@@ -169,7 +169,7 @@ function drawChart4() {
 
     // Set Options
     const options = {
-        title: 'Esgotamento sanitário',
+        title: 'Esgotamento sanitário 2010',
         legend: {
             position: 'top', textStyle: {
                 fontSize: 16
@@ -261,7 +261,7 @@ function drawChart5() {
 
     // Set Options
     const options = {
-        title: 'Arborização',
+        title: 'Arborização 2010',
         legend: { position: 'none' },
         backgroundColor: 'transparent',
         focusTarget: 'category',
@@ -298,7 +298,7 @@ function drawChart6() {
 
     // Set Options
     const options = {
-        title: 'Mortalidade infantil',
+        title: 'Mortalidade infantil 2022',
         legend: {
             position: 'top', textStyle: {
                 fontSize: 16
