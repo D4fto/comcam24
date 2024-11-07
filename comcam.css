@@ -83,6 +83,12 @@ caption {
     position: sticky;
     left: 0;
 }
+
+.fontes{ 
+    text-decoration: none;
+    color: #ffffff;
+}
+
 tbody tr td:first-child{
     position: sticky;
     left: 0;
@@ -237,7 +243,6 @@ h1{
     font-weight: 500;
     color: #34495E;
 }
-
 
 h2{
     text-align: center;
